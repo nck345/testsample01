@@ -1,0 +1,16 @@
+# Design and working files
+design_layers/
+figma/
+design_spec.md
+task.md
+rules.md
+
+# Agent configurations
+.agents/
+
+# System and editor files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
