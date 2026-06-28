@@ -1,7 +1,7 @@
 /* ==========================================================================
    DESIGN SYSTEM & BASIC STYLES (Figma Wireframe Slicing)
    ========================================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap');
 
 :root {
   /* Colors */
@@ -18,7 +18,8 @@
   --border-color: #E5E7EB;
   
   /* Fonts */
-  --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-main: 'Nunito', sans-serif;
+  --font-title: 'Poppins', sans-serif;
   
   /* Layout Spacings */
   --container-width: 1200px;
@@ -134,28 +135,74 @@ input:focus, select:focus, textarea:focus {
 }
 
 .section-tag-red {
-  color: var(--primary);
-  font-weight: 700;
-  font-size: 0.9rem;
+  font-family: var(--font-main);
+  color: #071C1F;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 74px;
+  letter-spacing: -0.015em;
   text-transform: capitalize;
   margin-bottom: 12px;
 }
 
 .section-title {
-  font-size: 2.8rem;
-  font-weight: 800;
-  color: var(--secondary);
-  line-height: 1.2;
+  font-family: var(--font-main);
+  font-size: 38px;
+  font-weight: 700;
+  color: #071C1F;
+  line-height: 48px;
+  letter-spacing: -0.015em;
   margin-bottom: 20px;
 }
 
 .section-title-center {
-  font-size: 2.8rem;
-  font-weight: 800;
-  color: var(--secondary);
-  line-height: 1.2;
+  font-family: var(--font-main);
+  font-size: 38px;
+  font-weight: 700;
+  color: #071C1F;
+  line-height: 48px;
+  letter-spacing: -0.015em;
   margin-bottom: 16px;
   text-align: center;
+}
+
+/* Figma Detailed Section Headings */
+.services .section-title-center {
+  font-family: var(--font-title);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.01em;
+  color: #071440;
+}
+
+.properties .section-title {
+  font-family: var(--font-main);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  color: #242424;
+}
+
+.testimonial .section-title {
+  font-family: var(--font-main);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+  color: #071C1F;
+  margin-bottom: 24px;
+}
+
+.blog .section-title-center {
+  font-family: var(--font-main);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0em;
+  color: #242424;
+  margin-bottom: 40px;
 }
 
 .section-desc {
@@ -247,8 +294,10 @@ input:focus, select:focus, textarea:focus {
   color: var(--secondary);
 }
 
-.logo span {
-  color: var(--primary);
+.logo-img {
+  width: 171.86px;
+  height: 54.61px;
+  display: block;
 }
 
 .nav-menu {
@@ -305,31 +354,39 @@ input:focus, select:focus, textarea:focus {
 }
 
 .hero-title {
-  font-size: 4rem;
-  font-weight: 800;
-  line-height: 1.1;
-  color: var(--secondary);
+  font-family: 'Poppins', sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 66px;
+  letter-spacing: -0.015em;
+  color: #071C1F;
   margin-bottom: 24px;
   position: relative;
+  width: 575px;
 }
 
-.hero-title span {
-  color: var(--primary);
-}
-
-.hero-arrow-svg {
+.hero-vector {
   position: absolute;
-  bottom: -25px;
-  left: 200px;
+  top: 83px;
+  left: 381px;
+  width: 209.55px;
+  height: 155.43px;
+  transform: rotate(-10deg);
+  object-fit: contain;
+  opacity: 1;
+  pointer-events: none;
   z-index: 5;
 }
 
 .hero-desc {
-  font-size: 1.15rem;
-  color: var(--text-gray);
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  color: #9EABB2;
   margin-bottom: 40px;
   max-width: 500px;
-  line-height: 1.6;
 }
 
 .hero-image-wrapper {
@@ -360,39 +417,11 @@ input:focus, select:focus, textarea:focus {
   z-index: 10;
 }
 
-.revenue-icon {
-  background-color: var(--primary-light);
-  color: var(--primary);
-  width: 48px;
-  height: 48px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+.revenue-icon-img {
+  width: 50px;
+  height: 50px;
+  display: block;
 }
-
-.revenue-icon i {
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-.revenue-icon-bars {
-  display: flex;
-  gap: 2px;
-  margin-top: 4px;
-  align-items: flex-end;
-}
-
-.revenue-icon-bars span {
-  display: inline-block;
-  width: 3px;
-  background-color: var(--primary);
-}
-.revenue-icon-bars span:nth-child(1) { height: 6px; }
-.revenue-icon-bars span:nth-child(2) { height: 12px; }
-.revenue-icon-bars span:nth-child(3) { height: 8px; }
 
 .revenue-info h4 {
   font-size: 1.25rem;
@@ -649,51 +678,68 @@ input:focus, select:focus, textarea:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid var(--border-color);
-  padding-top: 30px;
-  max-width: 480px;
+  width: 418px;
+  height: 80px;
+  margin-top: 30px;
+  box-sizing: border-box;
 }
 
 .house-tabs {
   display: flex;
-  gap: 16px;
+  align-items: flex-end;
+  gap: 8px;
+  height: 100%;
 }
 
 .house-tab {
-  font-size: 0.85rem;
+  font-family: var(--font-main);
+  font-size: 10px;
   font-weight: 700;
-  color: var(--text-light);
+  color: #374151;
+  background-color: #E5E7EB;
+  border: 1px solid rgba(0, 0, 0, 0.05);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
+.house-tab:nth-child(1) { height: 70px; }
+.house-tab:nth-child(2) { height: 50px; }
+.house-tab:nth-child(3) { height: 60px; }
+
 .house-tab.active {
-  color: var(--secondary);
-  border-bottom: 2px solid var(--primary);
-  padding-bottom: 4px;
+  background-color: #D1D5DB;
+  color: #111827;
 }
 
 .house-dots {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  height: 100%;
 }
 
 .line-dot {
   display: inline-block;
-  width: 40px;
+  width: 30px;
   height: 2px;
-  background-color: var(--border-color);
+  background-color: var(--secondary);
 }
 
 .number-dot {
-  font-size: 0.85rem;
+  font-family: var(--font-main);
+  font-size: 14px;
   font-weight: 700;
   color: var(--text-light);
   cursor: pointer;
 }
 
 .number-dot.active {
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 .about-right-gallery {
@@ -1025,6 +1071,11 @@ input:focus, select:focus, textarea:focus {
 
 .testimonial-right-content {
   position: relative;
+}
+
+.testimonial-card {
+  position: relative;
+  margin-top: 40px;
 }
 
 .quote-mark {
@@ -1397,15 +1448,16 @@ input:focus, select:focus, textarea:focus {
   margin-bottom: 24px;
 }
 
-.footer-logo {
-  color: var(--bg-white);
-  font-size: 1.6rem;
-  font-weight: 800;
+.footer-logo-link {
+  display: block;
   margin-bottom: 20px;
 }
 
-.footer-logo span {
-  color: var(--primary);
+.footer-logo-img {
+  width: 140px;
+  height: 44.5px;
+  display: block;
+  filter: brightness(0) invert(1);
 }
 
 .footer-desc {
@@ -1576,6 +1628,18 @@ input:focus, select:focus, textarea:focus {
   
   .hero-title {
     font-size: 2.6rem;
+    line-height: 1.25;
+    width: 100%;
+  }
+
+  .hero-vector {
+    display: none;
+  }
+
+  .house-slider-nav {
+    width: 100%;
+    max-width: 418px;
+    margin: 30px auto 0 auto;
   }
 
   .hero-image-wrapper {

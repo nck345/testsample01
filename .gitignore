@@ -2,8 +2,8 @@
 design_layers/
 figma/
 design_spec.md
-task.md
 rules.md
+images/
 
 # Agent configurations
 .agents/
