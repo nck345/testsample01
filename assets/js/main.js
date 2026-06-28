@@ -2,6 +2,18 @@ function init() {
   console.log('Main JS Initialized');
 
   // ==========================================================================
+  // DISABLE DEFAULT JUMP ON DUMMY LINKS & BUTTONS
+  // ==========================================================================
+  document.querySelectorAll('a').forEach(anchor => {
+    const href = anchor.getAttribute('href');
+    if (href === '#' || href === '#properties' || (href === '#contact' && !anchor.closest('.nav-menu'))) {
+      anchor.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
+    }
+  });
+
+  // ==========================================================================
   // MOBILE MENU TOGGLE
   // ==========================================================================
   const menuToggle = document.querySelector('.menu-toggle');
