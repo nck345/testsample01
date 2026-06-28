@@ -42,13 +42,6 @@ testsample01/
 ### Chạy trực tiếp trên máy cục bộ (Offline)
 Bạn chỉ cần nhấp đúp chuột trực tiếp vào file `index.html` ở thư mục gốc để mở và trải nghiệm giao diện trên bất kỳ trình duyệt nào (Chrome, Safari, Edge, Firefox).
 
-### Triển khai thử nghiệm (Online)
-Để nộp bài kiểm tra:
-1. Đẩy dự án lên một Git Repository cá nhân (ví dụ: GitHub, GitLab).
-2. Kích hoạt tính năng Deploy nhanh (như **GitHub Pages**, **Vercel** hoặc **Netlify**) trỏ vào file `index.html` của dự án để lấy link URL chạy thử trực tuyến.
-
----
-
 ## 👤 Thông Tin Ứng Viên
 - **Họ và tên**: NGUYỄN CHÁNH KHIÊM
 - **Vị trí ứng tuyển**: Frontend Developer
